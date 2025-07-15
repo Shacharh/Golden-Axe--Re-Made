@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8354588756569167316}
   m_Layer: 0
-  m_Name: Large_VialsStand
+  m_Name: HP-Potion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
