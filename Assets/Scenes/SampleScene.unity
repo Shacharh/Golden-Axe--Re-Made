@@ -1057,7 +1057,7 @@ MonoBehaviour:
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 34.9
+    FieldOfView: 35
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
@@ -2766,6 +2766,7 @@ GameObject:
   - component: {fileID: 275856099}
   - component: {fileID: 275856098}
   - component: {fileID: 275856097}
+  - component: {fileID: 275856100}
   m_Layer: 0
   m_Name: StairwellCamFOVTriger
   m_TagString: Untagged
@@ -2817,6 +2818,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &275856100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275856096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6936548ffa915d54f82ab6e856bffafe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fov: 65
+  cameraObject: {fileID: 100933541}
+  transitionTime: 1.2
 --- !u!1001 &294598838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3239,7 +3255,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 34.9
+  field of view: 35
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
