@@ -5365,7 +5365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653904776}
   m_Layer: 0
-  m_Name: ----------------------
+  m_Name: ---Cameras---------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8224,7 +8224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031913943}
   m_Layer: 0
-  m_Name: ---------------------- (5)
+  m_Name: ----interactableObjects---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9100,7 +9100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1135830613}
   m_Layer: 0
-  m_Name: ---------------------- (3)
+  m_Name: '---Player----------- '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9611,7 +9611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267718176}
   m_Layer: 0
-  m_Name: ---------------------- (6)
+  m_Name: ------LevelDecor------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9724,7 +9724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1281190497}
   m_Layer: 0
-  m_Name: ---------------------- (2)
+  m_Name: ----BaseConstruct-----
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9755,7 +9755,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1286043126}
   m_Layer: 0
-  m_Name: ---------------------- (4)
+  m_Name: ----splines---------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12956,7 +12956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1727201551}
   m_Layer: 0
-  m_Name: ---------------------- (7)
+  m_Name: ------SpawnedEnemies------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
