@@ -966,7 +966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &100933539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SplineSettings:
     Spline: {fileID: 1640246505}
-    Position: 0
+    Position: 0.16129385
     Units: 1
   SplineOffset: {x: 0, y: 0, z: 0}
   CameraRotation: 0
@@ -1085,8 +1085,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100933538}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26452032, y: -0.64206445, z: 0.25198394, w: 0.67400765}
-  m_LocalPosition: {x: 7.0999336, y: 11.27536, z: 202.79657}
+  m_LocalRotation: {x: -0.0013900242, y: 0.9983165, z: -0.027058879, w: -0.05128388}
+  m_LocalPosition: {x: 17.492897, y: 12.1432, z: 201.09627}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3446,7 +3446,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 35
+  field of view: 60.000004
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -3472,8 +3472,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26452035, y: -0.6420645, z: 0.25198397, w: 0.6740076}
-  m_LocalPosition: {x: 7.0999336, y: 11.27536, z: 202.79657}
+  m_LocalRotation: {x: 0.1376958, y: -0.7042253, z: 0.14222041, w: 0.68182105}
+  m_LocalPosition: {x: 4.5899315, y: 7.4253597, z: -12.261214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5711,7 +5711,7 @@ Transform:
   m_GameObject: {fileID: 572457653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7476, y: 3.9187, z: 196}
+  m_LocalPosition: {x: -3.7476, y: 3.9187, z: 195}
   m_LocalScale: {x: 9.067375, y: 6.922842, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15738,7 +15738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SplineSettings:
     Spline: {fileID: 475520891}
-    Position: 210.2013
+    Position: 1.9633287
     Units: 0
   SplineOffset: {x: 0, y: 0, z: 0.32}
   CameraRotation: 0
@@ -15769,7 +15769,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776297439}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
@@ -15813,8 +15813,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776297439}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09387644, y: -0.4770494, z: 0.051337484, w: 0.8723391}
-  m_LocalPosition: {x: 6.984653, y: 7.3848, z: 195.9549}
+  m_LocalRotation: {x: 0.1376958, y: -0.7042253, z: 0.14222042, w: 0.68182105}
+  m_LocalPosition: {x: 4.5899315, y: 7.4253597, z: -12.261214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19674,7 +19674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 203.36
+      value: -12.53
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.w
