@@ -4154,8 +4154,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06541126, y: -0.7067838, z: -0.06853431, w: -0.7010572}
-  m_LocalPosition: {x: 65.5955, y: 19.050026, z: 213.69751}
+  m_LocalRotation: {x: 0.28310648, y: -0.06293826, z: 0.018085174, w: 0.9568503}
+  m_LocalPosition: {x: 84.29, y: 28.43, z: 194.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9801,7 +9801,7 @@ GameObject:
   - component: {fileID: 762143962}
   - component: {fileID: 762143961}
   m_Layer: 0
-  m_Name: FreeLook Camera
+  m_Name: ThroneRoom-Cam0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9859,7 +9859,7 @@ Transform:
   m_GameObject: {fileID: 762143960}
   serializedVersion: 2
   m_LocalRotation: {x: 0.28310648, y: -0.06293826, z: 0.018085174, w: 0.9568503}
-  m_LocalPosition: {x: 84.19058, y: 36.765495, z: 194.59787}
+  m_LocalPosition: {x: 84.29, y: 28.43, z: 194.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28456,6 +28456,7 @@ SceneRoots:
   - {fileID: 653904776}
   - {fileID: 1776297443}
   - {fileID: 100933542}
+  - {fileID: 762143962}
   - {fileID: 263020950}
   - {fileID: 1281190497}
   - {fileID: 1079217719}
@@ -28478,4 +28479,3 @@ SceneRoots:
   - {fileID: 1484897783}
   - {fileID: 1290859658}
   - {fileID: 7896537094154908242}
-  - {fileID: 762143962}
