@@ -5,6 +5,7 @@ public class Respawner : MonoBehaviour
     public string playerTag = "Player";
     public Transform respawnLocation;
     public Transform playerLocation;
+    [SerializeField] Health playerHealth;
     
 
     private void OnTriggerEnter(Collider other)
@@ -12,6 +13,7 @@ public class Respawner : MonoBehaviour
         if(other.CompareTag(playerTag))
         {
             ResetPlayerLocation();
+            playerHealth.TakeDamage(50);
             
         }
     }
@@ -24,8 +26,5 @@ public class Respawner : MonoBehaviour
         Physics.SyncTransforms();
     }
 
-    public void TeleportPlayer(Transform newPosition)
-    {
-        playerLocation.position = newPosition.position;
-    }
+    
 }
