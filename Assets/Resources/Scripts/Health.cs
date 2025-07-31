@@ -4,10 +4,11 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public Slider healthSlider;
+    public Slider easeHealthSlider;
     public float maxHealth = 100f;
     public float health;
-    [SerializeField] Transform playerLocation;
-    [SerializeField] Transform startingLocation;
+    private float lerpSpeed = 0.05f;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,9 +24,14 @@ public class Health : MonoBehaviour
             healthSlider.value = health;
         }
 
-        if(health <= 0)
+        if(healthSlider.value != easeHealthSlider.value)
         {
-            Death();
+            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, health, lerpSpeed);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            TakeDamage(20);
         }
         
     }
@@ -35,10 +41,4 @@ public class Health : MonoBehaviour
         health -= damage;
     }
 
-    void Death()
-    {
-        playerLocation = startingLocation;
-        Physics.SyncTransforms();
-        health = maxHealth;
-    }
 }
