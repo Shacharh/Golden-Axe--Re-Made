@@ -9,10 +9,13 @@ public class CombatSystem : MonoBehaviour
     public static int numOfClicks = 0;
     float lastClickedTime = 0f;
     float maxComboDelay = 1f;
+
+    [SerializeField] BoxCollider weaponCollider;
    
     void Start()
     {
         anim = GetComponent<Animator>();
+
     }
 
     void Update()
@@ -31,6 +34,7 @@ public class CombatSystem : MonoBehaviour
         {
             anim.SetBool("attack3", false);
             numOfClicks = 0;
+
         }
 
         if(Time.time - lastClickedTime > maxComboDelay)
@@ -44,6 +48,16 @@ public class CombatSystem : MonoBehaviour
             {
                 OnClick();
             }
+        }
+
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("attack1") || anim.GetCurrentAnimatorStateInfo(0).IsName("attack2") || anim.GetCurrentAnimatorStateInfo(0).IsName("attack3"))
+        {
+            weaponCollider.enabled = true;
+        }
+
+        else
+        {
+            weaponCollider.enabled = false;
         }
     }
 
