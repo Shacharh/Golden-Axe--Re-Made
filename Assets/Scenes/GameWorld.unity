@@ -4072,8 +4072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5140d8132ebec1749ba85f1dca8a7757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WallMaterial: {fileID: 0}
-  Camera: {fileID: 0}
+  WallMaterial: {fileID: 2100000, guid: 501f51c5fd89cb843a90f74458bd7b9a, type: 2}
+  Camera: {fileID: 330585545}
   Mask:
     serializedVersion: 2
     m_Bits: 0
