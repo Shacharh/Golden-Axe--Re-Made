@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 
 
@@ -9,18 +10,22 @@ public class CircleSync : MonoBehaviour
     public Camera Camera;
     public LayerMask Mask;
     public float Radius = 1;
+    public bool rayhit = false;
+    
     void Update()
     {
         var Dir = Camera.transform.position - transform.position;
-        var ray = new Ray(transform.position, Dir.normalized);
+        var ray = new Ray(Camera.transform.position, Dir.normalized);
 
         if (Physics.Raycast(ray, Mathf.Infinity, Mask))
         {
             WallMaterial.SetFloat(SizeID, Radius);
+            rayhit = true;
         }
         else
         {
             WallMaterial.SetFloat(SizeID, 0);
+            rayhit = false;
         }
         
         var view = Camera.WorldToViewportPoint(transform.position);
