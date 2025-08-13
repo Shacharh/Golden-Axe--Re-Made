@@ -16,7 +16,7 @@ public partial class DetectingPlayerAction : Action
     {
         var detectedTarget = DetectionScript.Value.DetectTarget();
         Target.Value = detectedTarget;
-        return Target != null ? Status.Success : Status.Failure;
+        return Target.Value != null ? Status.Success : Status.Failure;
     }
 
 }
