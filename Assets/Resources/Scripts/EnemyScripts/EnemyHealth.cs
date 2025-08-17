@@ -37,13 +37,13 @@ public class EnemyHealth : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Weapon"))
         {
-            TakeDamage(30);
+            EnemyTakeDamage(30);
             Debug.Log("enemyTookDamage");
         }
         
     }
 
-    void TakeDamage(float damage)
+    public void EnemyTakeDamage(float damage)
     {
         health -= damage;
     }
