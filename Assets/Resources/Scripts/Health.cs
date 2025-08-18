@@ -8,8 +8,6 @@ public class Health : MonoBehaviour
     public float maxHealth = 100f;
     public float health;
     private float lerpSpeed = 0.05f;
-
-    [SerializeField] EnemyDamageMaker enemyDamageMaker;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,14 +34,6 @@ public class Health : MonoBehaviour
             TakeDamage(20);
         }
         
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "EnemyWeapon")
-        {
-            TakeDamage(enemyDamageMaker.enemyDamage);
-        }
     }
 
     public void TakeDamage(float damage)
