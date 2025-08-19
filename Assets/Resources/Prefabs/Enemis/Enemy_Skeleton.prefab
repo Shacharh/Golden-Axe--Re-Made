@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6005048252119367391}
+  - component: {fileID: 6219994422250328766}
+  - component: {fileID: 7527633169596516462}
   m_Layer: 0
   m_Name: Enemy_Skeleton
   m_TagString: Untagged

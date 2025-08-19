@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 5342501495525514915}
   - component: {fileID: 8732557332686785681}
   - component: {fileID: 7695655761640936024}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -846,6 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 2
+  weaponCollider: {fileID: 220712315158164870}
 --- !u!114 &8732557332686785681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,7 +862,7 @@ MonoBehaviour:
   healthSlider: {fileID: 0}
   easeHealthSlider: {fileID: 0}
   maxHealth: 100
-  health: 93.8
+  health: 0
 --- !u!114 &7695655761640936024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2845,11 +2846,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sword_PlaceHOlderAsset
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd073321b9ab5a04cafad214511e90b1, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd073321b9ab5a04cafad214511e90b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 220712315158164870}
   m_SourcePrefab: {fileID: 100100000, guid: bd073321b9ab5a04cafad214511e90b1, type: 3}
+--- !u!1 &8632341424129307409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bd073321b9ab5a04cafad214511e90b1, type: 3}
+  m_PrefabInstance: {fileID: 8866836819590827584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &220712315158164870
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8632341424129307409}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58610696, y: 0.15999834, z: 0.16709697}
+  m_Center: {x: -0.47524637, y: -0.0000019830056, z: -0.0000016914606}
 --- !u!4 &8973400708068780459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bd073321b9ab5a04cafad214511e90b1, type: 3}
