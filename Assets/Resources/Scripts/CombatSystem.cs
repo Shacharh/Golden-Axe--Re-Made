@@ -9,7 +9,6 @@ public class CombatSystem : MonoBehaviour
     public static int numOfClicks = 0;
     float lastClickedTime = 0f;
     float maxComboDelay = 1f;
-    [SerializeField] float playerDamage;
 
     [SerializeField] BoxCollider weaponCollider;
    

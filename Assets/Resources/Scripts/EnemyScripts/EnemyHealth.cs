@@ -11,13 +11,11 @@ public class EnemyHealth : MonoBehaviour
     public float damageRecieved;
     private float lerpSpeed = 0.05f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health = maxHealth;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (healthSlider.value != health)

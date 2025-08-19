@@ -27,13 +27,7 @@ public class Health : MonoBehaviour
         if(healthSlider.value != easeHealthSlider.value)
         {
             easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, health, lerpSpeed);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            TakeDamage(20);
-        }
-        
+        }  
     }
 
     public void TakeDamage(float damage)
