@@ -30673,53 +30673,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 324600112}
     m_Modifications:
-    - target: {fileID: 3714841922364857947, guid: 2c87e8c3464ca9a47a2201ea83d53802, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4683488175384735004, guid: 2c87e8c3464ca9a47a2201ea83d53802, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4728522597695752240, guid: 2c87e8c3464ca9a47a2201ea83d53802, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558669296500800311, guid: 2c87e8c3464ca9a47a2201ea83d53802, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 952930620015233482, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1368029024961938012, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1598225752467374136, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
       propertyPath: m_Name
       value: WindowlessBack_Wall Variant (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 1598225752467374136, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1598225752467374136, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2081702100027225201, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2323805105852200143, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 2562460293736311472, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.43647766
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 2562460293736311472, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30727,7 +30687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2562460293736311472, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 138.95
+      value: 138.97
       objectReference: {fileID: 0}
     - target: {fileID: 2562460293736311472, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30757,29 +30717,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3446806299531153474, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 4680738479373370592, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5635692422345271722, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6187557995019548001, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 8615393126860886565, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8615393126860886565, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 484dc8986d4a7fc42a68f2ea10e98e51, type: 3}
