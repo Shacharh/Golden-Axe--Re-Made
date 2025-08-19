@@ -11,8 +11,6 @@ public class EnemyDamageMaker : MonoBehaviour
         {
             playerHealth = other.GetComponent<Health>();
             playerHealth.TakeDamage(enemyDamage);
-            Debug.Log("enemyMadeDamage"+ other.name);
-
         }
 
     }

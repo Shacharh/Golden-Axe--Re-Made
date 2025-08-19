@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     public Slider easeHealthSlider;
     public float maxHealth = 100f;
     public float health;
+    public float damageRecieved;
     private float lerpSpeed = 0.05f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -37,7 +38,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Weapon"))
         {
-            EnemyTakeDamage(30);
+            EnemyTakeDamage(damageRecieved);
             Debug.Log("enemyTookDamage");
         }
         

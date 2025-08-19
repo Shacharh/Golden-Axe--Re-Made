@@ -103,8 +103,6 @@ public class EnemyBehavior : MonoBehaviour
         if(hits.Length > 0)
         {
             LastTarget = hits[0].gameObject;
-            Debug.Log(LastTarget.name);
-            
         }
         else
         {
