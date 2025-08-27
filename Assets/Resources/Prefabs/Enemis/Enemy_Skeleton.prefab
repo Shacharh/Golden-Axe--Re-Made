@@ -688,9 +688,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5485312905488032403, guid: 7d513cd660d693848980a924450048b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3113971826173440431}
-    - targetCorrespondingSourceObject: {fileID: 5485312905488032403, guid: 7d513cd660d693848980a924450048b4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 447382539153048330}
   m_SourcePrefab: {fileID: 100100000, guid: 7d513cd660d693848980a924450048b4, type: 3}
 --- !u!95 &4552025709906846335 stripped
 Animator:
@@ -787,20 +784,6 @@ MonoBehaviour:
   attackRange: 1
   attackCooldown: 1
   memoryDuration: 5
---- !u!114 &447382539153048330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7177942033160251399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b9cdbcac363ee4abcb55e175d07571, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyDamage: 15
-  enemyAnimator: {fileID: 4552025709906846335}
 --- !u!4 &7554503133962760893 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5139855854828959785, guid: 7d513cd660d693848980a924450048b4, type: 3}
