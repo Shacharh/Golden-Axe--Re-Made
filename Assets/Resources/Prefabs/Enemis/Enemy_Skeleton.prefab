@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonSoldier
       objectReference: {fileID: 0}
+    - target: {fileID: 6759499069406499715, guid: 7d513cd660d693848980a924450048b4, type: 3}
+      propertyPath: 'm_Transforms.Array.data[25]'
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7880111702235797865, guid: 7d513cd660d693848980a924450048b4, type: 3}
@@ -718,7 +722,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.1660433, y: 1.9170587, z: 0.8901762}
-  m_Center: {x: 0.07157016, y: 0.8322836, z: 0.14548475}
+  m_Center: {x: 0.07157016, y: -0.07, z: 0.14548475}
 --- !u!54 &8825291076773141474
 Rigidbody:
   m_ObjectHideFlags: 0
