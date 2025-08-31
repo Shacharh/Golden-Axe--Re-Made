@@ -201,7 +201,7 @@ MonoBehaviour:
   playerTag: Player
   respawnLocation: {fileID: 946781768}
   playerLocation: {fileID: 3893294197795769105}
-  playerHealth: {fileID: 0}
+  playerHealth: {fileID: 3893294197795769108}
 --- !u!1001 &17694597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39461,6 +39461,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7011112482648143786, guid: 345d95fb0c4cdbc43be69c4d7ee61ad7, type: 3}
   m_PrefabInstance: {fileID: 1182393133}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1637186659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7177942033160251399, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
+  m_PrefabInstance: {fileID: 1807333197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1637186667
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637186659}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1639910349
 GameObject:
   m_ObjectHideFlags: 1
@@ -42368,6 +42395,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7177942033160251399, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7212071651286878584, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -42391,6 +42422,10 @@ PrefabInstance:
     - target: {fileID: 8825291076773141474, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
       propertyPath: m_Mass
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825291076773141474, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9162999000993392854, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
       propertyPath: m_TagString
@@ -42420,7 +42455,10 @@ PrefabInstance:
     - {fileID: 9162999000993392860, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7177942033160251399, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1637186667}
   m_SourcePrefab: {fileID: 100100000, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
 --- !u!1 &1810992207
 GameObject:
@@ -44808,6 +44846,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!65 &1918329632 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 1416868245980027596, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+  m_PrefabInstance: {fileID: 8260340440248724677}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1923305806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3093283929410345795, guid: ce11b7d3c26f9c94c9362e051da72b61, type: 3}
@@ -48825,6 +48868,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.56
       objectReference: {fileID: 0}
+    - target: {fileID: 6001468452427804846, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001468452427804846, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 3893294197795769108}
+    - target: {fileID: 6001468452427804846, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
+      propertyPath: playerLocation
+      value: 
+      objectReference: {fileID: 3893294197795769105}
+    - target: {fileID: 6001468452427804846, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
+      propertyPath: respawnLocation
+      value: 
+      objectReference: {fileID: 1393009052}
     - target: {fileID: 6243543541350651568, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -49221,6 +49280,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5711207673928115127, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
   m_PrefabInstance: {fileID: 8260340440248724677}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3893294197795769108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8732557332686785681, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+  m_PrefabInstance: {fileID: 8260340440248724677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d9dfdef41a4ebe4382e8c51dd370f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4687496810488020130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50022,6 +50092,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7177942033160251399, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 7212071651286878584, guid: 87a2e9704a2e42f4ab0c7e947a3a61c7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -50166,6 +50240,10 @@ PrefabInstance:
     - target: {fileID: 220712315158164870, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_Center.z
       value: -0.02417838
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587827652529598004, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2070770608506929203, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_Transforms.Array.size
@@ -50400,6 +50478,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2406400868765689739, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2406400868765689739, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -50450,7 +50532,7 @@ PrefabInstance:
     - target: {fileID: 5342501495525514915, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: weaponCollider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1918329632}
     - target: {fileID: 5711207673928115127, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.67
@@ -50522,7 +50604,7 @@ PrefabInstance:
     - target: {fileID: 7695655761640936024, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: playerHealth
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3893294197795769108}
     - target: {fileID: 7695655761640936024, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: respawnLocation
       value: 

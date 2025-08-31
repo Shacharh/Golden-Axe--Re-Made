@@ -32,7 +32,7 @@ public class EnemyHealth : MonoBehaviour
         easeHealthSlider.transform.forward = Camera.main.transform.forward;
     }
 
-    private void OnTriggerEnter(Collider other)
+   /* private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.layer == LayerMask.NameToLayer("Weapon"))
         {
@@ -40,7 +40,7 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log("enemyTookDamage");
         }
         
-    }
+    }*/
 
     public void EnemyTakeDamage(float damage)
     {
