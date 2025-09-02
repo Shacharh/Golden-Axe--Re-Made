@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class CombatSystem : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class CombatSystem : MonoBehaviour
     [Header("Weapon Settings")]
     [SerializeField] BoxCollider weaponCollider;
     public float weaponDamage = 20f;
-    private bool hasHit = false; //one hit per swing check
-   
+
+    private HashSet<GameObject> enemiesHit = new HashSet<GameObject>();
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -55,21 +57,6 @@ public class CombatSystem : MonoBehaviour
                 numOfClicks = 0;
             }
         }
-
-        //enabe/disable weapon collider based on anim state
-        if(anim.GetCurrentAnimatorStateInfo(0).IsName("attack1") || anim.GetCurrentAnimatorStateInfo(0).IsName("attack2") || anim.GetCurrentAnimatorStateInfo(0).IsName("attack3"))
-        {
-            if(!weaponCollider.enabled)
-            {
-                weaponCollider.enabled = true;
-                hasHit = false; //reset hit state at the start of swing
-            }
-        }
-
-        else
-        {
-            weaponCollider.enabled = false;
-        }
     }
 
     void OnClick()
@@ -97,19 +84,33 @@ public class CombatSystem : MonoBehaviour
     }
 
     //Weapon damage making 
-    private void OnTriggerEnter(Collider other)
+    public void OnWeaponTriggerEnter(Collider other)
     {
-        if (!weaponCollider.enabled || hasHit) return;
+        if (!weaponCollider.enabled) return;
+        if (!other.CompareTag("Enemy")) return;
+        if (enemiesHit.Contains(other.gameObject)) return;
 
-        if (other.CompareTag("Enemy"))
+        var enemy = other.GetComponent<EnemyHealth>();
+        if (enemy != null)
         {
-            EnemyHealth enemy = other.GetComponent<EnemyHealth>();
-            if (enemy != null)
-            {
-                enemy.EnemyTakeDamage(weaponDamage);
-                hasHit = true; //prevents multiple hits in the same animation
-                Debug.Log("hit");
-            }
+           enemy.EnemyTakeDamage(weaponDamage);
+            enemiesHit.Add(other.gameObject);
+           Debug.Log("hit");
+           
         }
+    }
+
+    //Called by Animtaion Event at the start of the swing
+    public void EnableWeaponCollider()
+    {
+        weaponCollider.enabled = true;
+        enemiesHit.Clear();
+    }
+
+    //Called by Animtaion Event at the end of the swing
+    public void DisableWeaponCollider()
+    {
+        weaponCollider.enabled = false;
+        enemiesHit.Clear();
     }
 }
