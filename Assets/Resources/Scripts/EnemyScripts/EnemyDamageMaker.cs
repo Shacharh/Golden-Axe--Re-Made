@@ -4,26 +4,28 @@ public class EnemyDamageMaker : MonoBehaviour
 {
     public float enemyDamage = 20f;
     private Health playerHealth;
-    private Collider weaponCollider;
+    [SerializeField] private BoxCollider weaponCollider;
     [SerializeField] private Animator enemyAnimator;
 
     private void Awake()
     {
         enemyAnimator = GetComponent<Animator>();
-        weaponCollider = GetComponent<Collider>();
+        //weaponCollider = GetComponent<Collider>();
+        weaponCollider.enabled = false;
     }
 
-    private void Update()
+    //Called by Animtaion Event at the start of the swing
+    public void EnableWeaponCollider()
     {
-        if(enemyAnimator.GetBool("isAttacking"))
-        {
-            weaponCollider.enabled = true;
-        }
+        weaponCollider.enabled = true;
+        
+    }
 
-        else
-        {
-            weaponCollider.enabled = false;
-        }
+    //Called by Animtaion Event at the end of the swing
+    public void DisableWeaponCollider()
+    {
+        weaponCollider.enabled = false;
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -31,6 +33,7 @@ public class EnemyDamageMaker : MonoBehaviour
         {
             playerHealth = other.GetComponent<Health>();
             playerHealth.TakeDamage(enemyDamage);
+            Debug.Log("player got hit");
         }
 
     }
