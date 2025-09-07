@@ -10,7 +10,7 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject LastTarget { get; private set; }
 
     [Header("Combat")]
-    [SerializeField] private float attackRange = 1f;
+    [SerializeField] private float attackRange = 1.5f;
     [SerializeField] private float attackCooldown = 1f;
     private float lastAttackTime;
 
@@ -20,7 +20,6 @@ public class EnemyBehavior : MonoBehaviour
     private bool chasingLastPosition;
     private Vector3 lastKnownLocation;
 
-    //private Transform player;
     private NavMeshAgent agent;
     private Animator animator;
 
@@ -28,13 +27,13 @@ public class EnemyBehavior : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+
+        agent.stoppingDistance = attackRange * 0.9f;
     }
 
     private void Update()
     {
         DetectTarget();
-
-       // agent.SetDestination(LastTarget.transform.position);
         
         if (LastTarget != null)
         {
@@ -51,7 +50,7 @@ public class EnemyBehavior : MonoBehaviour
                 chasingLastPosition = true;
 
                 animator.SetBool("Run", true);
-                animator.SetBool("isAttacking", false);
+                //animator.SetBool("IsAttacking", false);
             }
             
             else
@@ -62,27 +61,28 @@ public class EnemyBehavior : MonoBehaviour
 
                 if(Time.time - lastAttackTime >= attackCooldown)
                 {
-                    animator.SetBool("isAttacking", true);
+                    animator.SetTrigger("Attack");
                     lastAttackTime = Time.time;
                 }
 
-                else
+                /*else
                 {
+                    animator.SetBool("IsAttacking", false);
                     lastKnownLocation = LastTarget.transform.position;
                     memoryTimer = memoryDuration;
                     chasingLastPosition = true;
-                }
+                }*/
             }
         }
 
-         else if(chasingLastPosition)
+        else if(chasingLastPosition)
         {
             //player out of range, start chasing player again
             agent.isStopped = false;
             agent.SetDestination(lastKnownLocation);
 
             animator.SetBool("Run", true);
-            animator.SetBool("isAttacking", false);
+            //animator.SetBool("IsAttacking", false);
 
             memoryTimer -= Time.deltaTime;
 
@@ -94,20 +94,19 @@ public class EnemyBehavior : MonoBehaviour
             }
         }
         
-        
+        else
+        {
+            //lost player, back to idle
+            agent.isStopped = true;
+            animator.SetBool("Run", false);
+        }
+
     }
 
     public void DetectTarget()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, detectionRadius, playerMask);
-        if(hits.Length > 0)
-        {
-            LastTarget = hits[0].gameObject;
-        }
-        else
-        {
-            LastTarget = null;
-        }
+        LastTarget = hits.Length > 0 ? hits[0].gameObject : null;
         
     }
 
@@ -117,5 +116,8 @@ public class EnemyBehavior : MonoBehaviour
         if (!showDebugVisuals) return;
         Gizmos.color = LastTarget ? Color.green : Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
