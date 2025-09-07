@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class EnemyHealth : MonoBehaviour
     public float health;
     public float damageRecieved;
     private float lerpSpeed = 0.05f;
+
+    public event System.Action onDeath;
 
     void Start()
     {
@@ -45,5 +48,15 @@ public class EnemyHealth : MonoBehaviour
     public void EnemyTakeDamage(float damage)
     {
         health -= damage;
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        onDeath?.Invoke();
+        Destroy(gameObject);
     }
 }
