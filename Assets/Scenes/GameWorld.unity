@@ -754,7 +754,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 9.98
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3871,7 +3871,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4555,7 +4555,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5077,9 +5077,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 677513382}
-  - {fileID: 1812482995}
   - {fileID: 1036939940}
-  - {fileID: 1032918191}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &269950030
@@ -6009,11 +6007,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
-  far clip plane: 5000
-  field of view: 44.9
+  near clip plane: 0.27
+  far clip plane: 1000
+  field of view: 59.1
   orthographic: 0
-  orthographic size: 10
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6037,8 +6035,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04808803, y: -0.7180112, z: 0.049854055, w: 0.6925764}
-  m_LocalPosition: {x: 7.0226808, y: 4.3258605, z: -4.506317}
+  m_LocalRotation: {x: 0.09154547, y: -0.70671177, z: 0.09304034, w: 0.6953571}
+  m_LocalPosition: {x: 4.592051, y: 4.826369, z: -12.756152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10168,9 +10166,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.22352941, g: 0.2, b: 0.66, a: 1}
-  m_Intensity: 80
+  m_Intensity: 19.4
   m_Range: 20
-  m_SpotAngle: 133.26923
+  m_SpotAngle: 165.39743
   m_InnerSpotAngle: 86.058495
   m_CookieSize: 10
   m_Shadows:
@@ -16261,9 +16259,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.22352941, g: 0.2, b: 0.66, a: 1}
-  m_Intensity: 80
+  m_Intensity: 19.4
   m_Range: 20
-  m_SpotAngle: 133.26923
+  m_SpotAngle: 165.39743
   m_InnerSpotAngle: 86.058495
   m_CookieSize: 10
   m_Shadows:
@@ -17943,7 +17941,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 9.98
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -21543,9 +21541,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.22352941, g: 0.2, b: 0.66, a: 1}
-  m_Intensity: 80
+  m_Intensity: 19.4
   m_Range: 20
-  m_SpotAngle: 133.26923
+  m_SpotAngle: 165.39743
   m_InnerSpotAngle: 86.058495
   m_CookieSize: 10
   m_Shadows:
@@ -22494,9 +22492,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.22352941, g: 0.2, b: 0.66, a: 1}
-  m_Intensity: 80
+  m_Intensity: 19.4
   m_Range: 20
-  m_SpotAngle: 133.26923
+  m_SpotAngle: 165.39743
   m_InnerSpotAngle: 86.058495
   m_CookieSize: 10
   m_Shadows:
@@ -22813,81 +22811,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1032918190
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1032918191}
-  - component: {fileID: 1032918192}
-  m_Layer: 0
-  m_Name: BD_ThroneRoom1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1032918191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032918190}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.18510123, y: -0.47408003, z: 0.10136251, w: -0.85481656}
-  m_LocalPosition: {x: 64.3212, y: 41.01099, z: 182.64287}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 263020950}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1032918192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032918190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Priority:
-    Enabled: 1
-    m_Value: 100
-  OutputChannel: 1
-  StandbyUpdate: 2
-  m_StreamingVersion: 20241001
-  m_LegacyPriority: 0
-  Target:
-    TrackingTarget: {fileID: 0}
-    LookAtTarget: {fileID: 0}
-    CustomLookAtTarget: 0
-  Lens:
-    FieldOfView: 60.000004
-    OrthographicSize: 10
-    NearClipPlane: 0.1
-    FarClipPlane: 5000
-    Dutch: 0
-    ModeOverride: 0
-    PhysicalProperties:
-      GateFit: 2
-      SensorSize: {x: 21.946, y: 16.002}
-      LensShift: {x: 0, y: 0}
-      FocusDistance: 10
-      Iso: 200
-      ShutterSpeed: 0.005
-      Aperture: 16
-      BladeCount: 5
-      Curvature: {x: 2, y: 11}
-      BarrelClipping: 0.25
-      Anamorphism: 0
-  BlendHint: 0
 --- !u!1 &1036939939
 GameObject:
   m_ObjectHideFlags: 0
@@ -22905,7 +22828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1036939940
 Transform:
   m_ObjectHideFlags: 0
@@ -22914,13 +22837,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036939939}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2172892, y: -0.6777379, z: 0.2208449, w: 0.6668465}
-  m_LocalPosition: {x: 3.052, y: 5.082, z: 9.591}
+  m_LocalRotation: {x: 0.09154547, y: -0.70671177, z: 0.09304034, w: 0.6953571}
+  m_LocalPosition: {x: 4.23, y: 2.08, z: -13.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 263020950}
-  m_LocalEulerAnglesHint: {x: 30, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: -90.928, z: 0}
 --- !u!114 &1036939941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22973,9 +22896,10 @@ Animation:
   m_GameObject: {fileID: 1036939939}
   m_Enabled: 1
   serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 23c02f93ec9b576408e07cc1424c5104, type: 2}
+  m_Animation: {fileID: 7400000, guid: e133e7429ff30724f8c70fa0b7244772, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 23c02f93ec9b576408e07cc1424c5104, type: 2}
+  - {fileID: 7400000, guid: e133e7429ff30724f8c70fa0b7244772, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -23391,7 +23315,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 9.98
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -24126,9 +24050,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.22352941, g: 0.2, b: 0.66, a: 1}
-  m_Intensity: 80
+  m_Intensity: 19.4
   m_Range: 20
-  m_SpotAngle: 133.26923
+  m_SpotAngle: 165.39743
   m_InnerSpotAngle: 86.058495
   m_CookieSize: 10
   m_Shadows:
@@ -38225,7 +38149,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -38530,7 +38454,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 9.98
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -38997,7 +38921,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.29042262, g: 0.27844644, b: 0.503, a: 1}
-  m_Intensity: 15
+  m_Intensity: 11.7
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -39489,7 +39413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1776297441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40522,81 +40446,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 688195037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1812482994
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1812482995}
-  - component: {fileID: 1812482996}
-  m_Layer: 0
-  m_Name: BD_Cam_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1812482995
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812482994}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.11384087, y: 0.8369319, z: -0.19214317, w: -0.4996662}
-  m_LocalPosition: {x: 4.9, y: 5.88, z: 30.95}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 263020950}
-  m_LocalEulerAnglesHint: {x: 19.115, y: -120.989, z: -0.001}
---- !u!114 &1812482996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812482994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Priority:
-    Enabled: 0
-    m_Value: 0
-  OutputChannel: 1
-  StandbyUpdate: 2
-  m_StreamingVersion: 20241001
-  m_LegacyPriority: 0
-  Target:
-    TrackingTarget: {fileID: 0}
-    LookAtTarget: {fileID: 0}
-    CustomLookAtTarget: 0
-  Lens:
-    FieldOfView: 60.000004
-    OrthographicSize: 5
-    NearClipPlane: 0.27
-    FarClipPlane: 1000
-    Dutch: 0
-    ModeOverride: 0
-    PhysicalProperties:
-      GateFit: 2
-      SensorSize: {x: 21.946, y: 16.002}
-      LensShift: {x: 0, y: 0}
-      FocusDistance: 10
-      Iso: 200
-      ShutterSpeed: 0.005
-      Aperture: 16
-      BladeCount: 5
-      Curvature: {x: 2, y: 11}
-      BarrelClipping: 0.25
-      Anamorphism: 0
-  BlendHint: 0
 --- !u!1001 &1813470102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41420,9 +41269,9 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 0.22352941, g: 0.2, b: 0.66, a: 1}
-  m_Intensity: 80
+  m_Intensity: 19.4
   m_Range: 20
-  m_SpotAngle: 133.26923
+  m_SpotAngle: 165.39743
   m_InnerSpotAngle: 86.058495
   m_CookieSize: 10
   m_Shadows:
