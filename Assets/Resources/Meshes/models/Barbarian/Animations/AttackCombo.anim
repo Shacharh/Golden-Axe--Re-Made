@@ -100820,4 +100820,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.083333336
+    functionName: EnableWeaponCollider
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: bde32a62565967a459e6d4a5557c00bb, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.5
+    functionName: DisableWeaponCollider
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: bde32a62565967a459e6d4a5557c00bb, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
