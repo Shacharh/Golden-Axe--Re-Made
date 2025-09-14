@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
     public Slider easeHealthSlider;
     public float maxHealth = 100f;
     public float health;
-    private float lerpSpeed = 0.05f;
+    [SerializeField] private float lerpSpeed = 0.05f;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,6 +19,10 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            TakeDamage(20);
+        }
         if(healthSlider.value != health)
         {
             healthSlider.value = health;

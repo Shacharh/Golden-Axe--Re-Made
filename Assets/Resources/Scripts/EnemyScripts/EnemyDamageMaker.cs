@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyDamageMaker : MonoBehaviour
 {
     public float enemyDamage = 20f;
-    private Health playerHealth;
+    public Health playerHealth;
     [SerializeField] private BoxCollider weaponCollider;
     [SerializeField] private Animator enemyAnimator;
 
@@ -33,7 +33,7 @@ public class EnemyDamageMaker : MonoBehaviour
         {
             playerHealth = other.GetComponent<Health>();
             playerHealth.TakeDamage(enemyDamage);
-            Debug.Log("player got hit");
+            Debug.Log("player got hit" + enemyDamage);
         }
 
     }
