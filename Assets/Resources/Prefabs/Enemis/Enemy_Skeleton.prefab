@@ -363,6 +363,59 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5046939619431572606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958733564283284458}
+  - component: {fileID: 3152735690038284987}
+  m_Layer: 0
+  m_Name: SwordCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1958733564283284458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046939619431572606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.204, y: -0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1053889762613621144}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3152735690038284987
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046939619431572606}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7972332, y: 0.08170461, z: 0.16383798}
+  m_Center: {x: 0.31150067, y: 0.0015419348, z: -0.024485987}
 --- !u!1 &6141476870545100726
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 20
-  weaponCollider: {fileID: 0}
-  enemyAnimator: {fileID: 0}
+  weaponCollider: {fileID: 3152735690038284987}
+  enemyAnimator: {fileID: 3594990743020433597}
 --- !u!114 &8625693762216504174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,8 +501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ded303049db4745a64ef2ab45e824d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
-  easeHealthSlider: {fileID: 0}
+  healthSlider: {fileID: 3862379776570150225}
+  easeHealthSlider: {fileID: 2565530371348329780}
   maxHealth: 100
   health: 0
   damageRecieved: 0
@@ -847,7 +900,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: faf3cb3947d0e794693997f13a2cc720, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1958733564283284458}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf3cb3947d0e794693997f13a2cc720, type: 3}
 --- !u!4 &1053889762613621144 stripped
