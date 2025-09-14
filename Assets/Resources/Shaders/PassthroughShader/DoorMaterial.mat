@@ -79,7 +79,7 @@ Material:
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Position: {r: -0.56725854, g: 0.16991466, b: 10.08585, a: 0}
+    - _Position: {r: 0.5286061, g: 0.23579699, b: 10.62099, a: 0}
     - _Tint: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
