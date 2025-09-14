@@ -267,7 +267,7 @@ MonoBehaviour:
   playerTag: Player
   respawnLocation: {fileID: 946781768}
   playerLocation: {fileID: 3893294197795769105}
-  playerHealth: {fileID: 3893294197795769108}
+  playerHealth: {fileID: 0}
 --- !u!1001 &17694597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31363,7 +31363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2038878805}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1258170837
 GameObject:
@@ -32070,7 +32070,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2038878805}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1311486105
 GameObject:
@@ -32100,9 +32100,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2038878805}
-  - {fileID: 313767739}
+  m_Children: []
   m_Father: {fileID: 1363428756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1313580931
@@ -33054,6 +33052,7 @@ Transform:
   - {fileID: 1664691806}
   - {fileID: 236686630}
   - {fileID: 1046407792}
+  - {fileID: 1311486106}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1367519855
@@ -42049,7 +42048,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2038878805}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1598399646
 PrefabInstance:
@@ -49315,18 +49314,6 @@ BoxCollider:
   m_CorrespondingSourceObject: {fileID: 1416868245980027596, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
   m_PrefabInstance: {fileID: 8260340440248724677}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1918329633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137858410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6653d454816343449cf6dfe686059f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1923305806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3093283929410345795, guid: ce11b7d3c26f9c94c9362e051da72b61, type: 3}
@@ -53780,7 +53767,7 @@ PrefabInstance:
     - target: {fileID: 6001468452427804846, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
       propertyPath: playerHealth
       value: 
-      objectReference: {fileID: 3893294197795769108}
+      objectReference: {fileID: 0}
     - target: {fileID: 6001468452427804846, guid: 60080ee566b0db94f99e626a5274fec0, type: 3}
       propertyPath: playerLocation
       value: 
@@ -56474,7 +56461,7 @@ PrefabInstance:
     - target: {fileID: 7695655761640936024, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: playerHealth
       value: 
-      objectReference: {fileID: 3893294197795769108}
+      objectReference: {fileID: 0}
     - target: {fileID: 7695655761640936024, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: respawnLocation
       value: 
@@ -56496,10 +56483,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 7856218421390974651, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1587827652529598004, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1918329633}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
 --- !u!1001 &8869973339293004616
 PrefabInstance:
@@ -56684,3 +56668,6 @@ SceneRoots:
   - {fileID: 1240405139}
   - {fileID: 1553482380}
   - {fileID: 699492064}
+  - {fileID: 1254675188}
+  - {fileID: 1310954246}
+  - {fileID: 1598357135}
