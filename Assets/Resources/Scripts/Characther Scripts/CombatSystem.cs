@@ -8,7 +8,7 @@ public class CombatSystem : MonoBehaviour
 
     [Header("Attack Settings")]
     public float cooldownTime = 2f;
-    private float nextHitTime = 0f;
+    [SerializeField] private float nextHitTime = 0f;
     public static int numOfClicks = 0;
     float lastClickedTime = 0f;
     float maxComboDelay = 1f;
@@ -35,13 +35,12 @@ public class CombatSystem : MonoBehaviour
         }
 
         //handle attack input
-        if (Time.time > nextHitTime)
+
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.G))
         {
-            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.G))
-            {
-                OnClick();
-            }
+            OnClick();
         }
+
 
         //disable attack anims bools after half anim time
         if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f)
@@ -69,7 +68,7 @@ public class CombatSystem : MonoBehaviour
             anim.SetBool("attack1", true);
         }
 
-        if(numOfClicks >=2 && anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && anim.GetCurrentAnimatorStateInfo(0).IsName("attack1"))
+        if (numOfClicks >= 2 && anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.5f && anim.GetCurrentAnimatorStateInfo(0).IsName("attack1"))
         {
             anim.SetBool("attack1", false);
             anim.SetBool("attack2", true);
@@ -93,10 +92,10 @@ public class CombatSystem : MonoBehaviour
         var enemy = other.GetComponent<EnemyHealth>();
         if (enemy != null)
         {
-           enemy.EnemyTakeDamage(weaponDamage);
+            enemy.EnemyTakeDamage(weaponDamage);
             enemiesHit.Add(other.gameObject);
-           Debug.Log("hit");
-           
+            Debug.Log("hit");
+
         }
     }
 
