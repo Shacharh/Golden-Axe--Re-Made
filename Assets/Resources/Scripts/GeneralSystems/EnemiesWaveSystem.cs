@@ -46,7 +46,7 @@ public class EnemiesWaveSystem : MonoBehaviour
 
             activeEnemies.Add(enemy);
 
-            EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+            HealthSystem enemyHealth = enemy.GetComponent<HealthSystem>();
             if(enemyHealth != null)
             {
                 enemyHealth.onDeath += () => { activeEnemies.Remove(enemy); };
