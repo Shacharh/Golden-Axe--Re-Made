@@ -93,10 +93,10 @@ public class NewCombatSystem : MonoBehaviour
         if (enemiesHit.Contains(other.gameObject)) return;
         Debug.Log("Enemy Detected");
 
-        var enemy = other.GetComponent<EnemyHealth>();
+        var enemy = other.GetComponent<HealthSystem>();
         if (enemy != null)
         {
-            enemy.EnemyTakeDamage(comboAttacks[currentComboStep].damage);
+            enemy.TakeDamage(comboAttacks[currentComboStep].damage);
             enemiesHit.Add(other.gameObject);
             Debug.Log("enemu got hit");
         }
