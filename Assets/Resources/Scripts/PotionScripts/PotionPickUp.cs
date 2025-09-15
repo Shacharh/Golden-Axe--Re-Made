@@ -1,47 +1,54 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PotionPickUp : MonoBehaviour
 {
-  /* 
+ 
     Health _health;
-    [SerializeField] enum PotionType
+    Mana _mana; // script not in game yet
+    public enum PotionType
     {
     Mana, HP
     }
-    [SerializeField] int HPamount;
-    [SerializeField] int Manaamount;
+    public PotionType potionType;
+    [SerializeField] int addAmount;
 
-    private Collider trigger;
+
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.gameObject.name);
         //identify if Player entered collider 
         if(other.CompareTag("Player"))
         {
             // if HP/mana, depending on enum bar is full, return
-            switch (PotionType)
+            switch (potionType)
             {
                 case PotionType.HP:
-                    if (_health.health >= _health.maxHealth)
+                    if (_health.health >= _health.maxHealth) //if health is full, return
                         return;
                     break;
                 case PotionType.Mana:
-                    //
+                   if (_mana.mana >= _mana.maxMana) //if mana is full, return
                         return;
-                    break;
+                   break;
             }
             
 
             
              // based on PotionType, figure out if need to add either Health, or mana to the player
-             switch (PotionType)
+             switch (potionType)
              {
-                 case PotionType.HP:
-                     _health.AddHealth(HPamount);
+                 case PotionType.HP: 
+                     _health.AddHealth(addAmount); 
+                     Debug.Log("HP added");
+                     Destroy(gameObject);
                      break;
                  case PotionType.Mana:
-                     //
+                    _mana.AddMana(addAmount);
+                    Destroy(gameObject);
+                     Debug.Log("Mana added");
                      break;
              }
              
@@ -51,9 +58,4 @@ public class PotionPickUp : MonoBehaviour
             
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
 }

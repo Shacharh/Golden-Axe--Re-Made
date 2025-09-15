@@ -39,4 +39,9 @@ public class Health : MonoBehaviour
         health -= damage;
     }
 
+    public void AddHealth(float additionalHealth)
+    {
+        this.health += additionalHealth;
+    }
+
 }
