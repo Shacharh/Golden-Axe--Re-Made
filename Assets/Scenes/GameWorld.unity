@@ -56591,6 +56591,14 @@ PrefabInstance:
       propertyPath: RotationSmoothTime
       value: 0.071
       objectReference: {fileID: 0}
+    - target: {fileID: 3618009880308296861, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1405661685}
+    - target: {fileID: 3618009880308296861, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+      propertyPath: easeHealthBar
+      value: 
+      objectReference: {fileID: 1012238414}
     - target: {fileID: 3866035173803220842, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_Enabled
       value: 1

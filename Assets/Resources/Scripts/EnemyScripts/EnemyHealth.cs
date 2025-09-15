@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public float damageRecieved;
     private float lerpSpeed = 0.05f;
 
-    public event System.Action onDeath;
+    public event System.Action onDeath; // i need this for enemies wave system, it tells the system that an enemy died.
 
     void Start()
     {
@@ -34,16 +34,6 @@ public class EnemyHealth : MonoBehaviour
         healthSlider.transform.forward = Camera.main.transform.forward;
         easeHealthSlider.transform.forward = Camera.main.transform.forward;
     }
-
-   /* private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Weapon"))
-        {
-            EnemyTakeDamage(damageRecieved);
-            Debug.Log("enemyTookDamage");
-        }
-        
-    }*/
 
     public void EnemyTakeDamage(float damage)
     {

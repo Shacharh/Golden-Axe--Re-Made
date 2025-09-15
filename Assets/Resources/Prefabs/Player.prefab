@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 6436363553824053141}
   - component: {fileID: 7223257240274186335}
   - component: {fileID: 5342501495525514915}
-  - component: {fileID: 8732557332686785681}
+  - component: {fileID: 3618009880308296861}
   - component: {fileID: 7695655761640936024}
   - component: {fileID: 2070770608506929203}
   m_Layer: 8
@@ -906,8 +906,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldownTime: 2
+  nextHitTime: 0
   weaponCollider: {fileID: 1416868245980027596}
---- !u!114 &8732557332686785681
+  weaponDamage: 20
+--- !u!114 &3618009880308296861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -916,13 +918,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2406400868765689739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9dfdef41a4ebe4382e8c51dd370f17, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d2e41e5d7ee5014bbf57fc004a506b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
-  easeHealthSlider: {fileID: 0}
   maxHealth: 100
   health: 0
+  lerpSpeed: 0.03
+  healthBar: {fileID: 0}
+  easeHealthBar: {fileID: 0}
+  worldSpaceHealthBar: 0
 --- !u!114 &7695655761640936024
 MonoBehaviour:
   m_ObjectHideFlags: 0
