@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class WeaponBehaviourProxy : MonoBehaviour
 {
-    private CombatSystem owner;
+    private NewCombatSystem owner;
 
     void Awake()
     {
-        owner = GetComponentInParent<CombatSystem>();
+        owner = GetComponentInParent<NewCombatSystem>();
     }
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("enemy");
         owner?.OnWeaponTriggerEnter(other);
     }
 }

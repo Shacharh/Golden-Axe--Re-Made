@@ -344,9 +344,9 @@ GameObject:
   - component: {fileID: 3199855363156505696}
   - component: {fileID: 5813492289102946195}
   - component: {fileID: 3594990743020433597}
-  - component: {fileID: 2114741838161228283}
+  - component: {fileID: 4270411682077878913}
   m_Layer: 0
-  m_Name: Enemy_Skeleton
+  m_Name: Enemy_Skeleton_Outside
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fd08b49ffac17d43b1c0aee455d70d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 5
+  detectionRadius: 8
   showDebugVisuals: 1
   playerMask:
     serializedVersion: 2
@@ -492,7 +492,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!136 &2114741838161228283
+--- !u!136 &4270411682077878913
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -511,10 +511,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2.16
+  m_Radius: 0.58
+  m_Height: 2.33
   m_Direction: 1
-  m_Center: {x: 0, y: 0.77, z: 0}
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &7705602879665882678
 GameObject:
   m_ObjectHideFlags: 0
