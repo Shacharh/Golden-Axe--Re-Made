@@ -54,4 +54,9 @@ public class HealthSystem : MonoBehaviour
         else
             Debug.Log("player died!");
     }
+
+    public void AddHealth (float addAmount)
+    {
+        health += addAmount;
+    }
 }
