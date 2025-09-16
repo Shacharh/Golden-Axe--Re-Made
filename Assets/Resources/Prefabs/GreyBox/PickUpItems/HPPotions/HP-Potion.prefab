@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb50681bdc722449bb3820ab85f7652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: {fileID: 0}
-  _mana: {fileID: 0}
+  _health: {fileID: 3618009880308296861, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
+  _mana: {fileID: 5453389347242835462, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
   potionType: 1
   addAmount: 30
 --- !u!136 &4069457275255109611
