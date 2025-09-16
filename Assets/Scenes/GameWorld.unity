@@ -42674,7 +42674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1595118729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44743,13 +44743,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1684542396}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.3963239, y: -0.57248193, z: 0.20742781, w: -0.6871431}
+  m_LocalRotation: {x: -0.3712553, y: -0.59333426, z: 0.28167644, w: -0.65634006}
   m_LocalPosition: {x: -7.58, y: 7.15, z: -2.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 51.459, y: 87.205, z: 15.71}
+  m_LocalEulerAnglesHint: {x: 55.245, y: 87.965, z: 7.135}
 --- !u!1001 &1697844094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51912,6 +51912,7 @@ GameObject:
   - component: {fileID: 1996417477}
   - component: {fileID: 1996417476}
   - component: {fileID: 1996417475}
+  - component: {fileID: 1996417478}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -52016,12 +52017,27 @@ Transform:
   m_GameObject: {fileID: 1996417474}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0026919981, y: -0.7372834, z: 0.10015316, w: 0.6681133}
-  m_LocalPosition: {x: -1.359, y: 2.438, z: -15.709}
+  m_LocalPosition: {x: -1.3590002, y: 2.438, z: -15.709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 8.701, y: 264.94, z: 7.549}
+--- !u!114 &1996417478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996417474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11b8f1268381594093c30c04f0f4507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 3893294197795769105}
+  cam: {fileID: 330585546}
+  distance: 2
 --- !u!1001 &2010728431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58115,6 +58131,7 @@ SceneRoots:
   - {fileID: 1713972219}
   - {fileID: 1135830613}
   - {fileID: 5318148856270699971}
+  - {fileID: 1996417477}
   - {fileID: 8260340440248724677}
   - {fileID: 1393009052}
   - {fileID: 12408048}
@@ -58155,6 +58172,5 @@ SceneRoots:
   - {fileID: 46221443}
   - {fileID: 1684542399}
   - {fileID: 1484417273}
-  - {fileID: 1996417477}
   - {fileID: 2015231552}
   - {fileID: 2042589536}

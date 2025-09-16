@@ -18,7 +18,8 @@ public class PotionPickUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        Debug.Log("Something entered trigger: " + other.name);
+
         //identify if Player entered collider 
         if(other.CompareTag("Player"))
         {
