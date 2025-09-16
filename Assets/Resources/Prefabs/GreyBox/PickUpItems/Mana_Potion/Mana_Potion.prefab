@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8354588756569167316}
+  - component: {fileID: 2601950527280335501}
+  - component: {fileID: 4581465781355087502}
   m_Layer: 0
   m_Name: Mana_Potion
   m_TagString: Untagged
@@ -32,6 +34,45 @@ Transform:
   - {fileID: 1274534609090024036}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2601950527280335501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431481030821311815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb50681bdc722449bb3820ab85f7652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: {fileID: 0}
+  _mana: {fileID: 0}
+  potionType: 0
+  addAmount: 20
+--- !u!136 &4581465781355087502
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431481030821311815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6220562
+  m_Height: 1.8263907
+  m_Direction: 1
+  m_Center: {x: 1.4741136e-10, y: 0.66230273, z: -0.028204978}
 --- !u!1001 &1601793845735847311
 PrefabInstance:
   m_ObjectHideFlags: 0
