@@ -10489,18 +10489,14 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: eabf5c56469978547a813b6fca803053, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -368063366622320868, guid: eabf5c56469978547a813b6fca803053, type: 2}
     value: {fileID: 1271691586}
-  - key: {fileID: 5930407174658655318, guid: eabf5c56469978547a813b6fca803053, type: 2}
-    value: {fileID: 8260340440248724690}
   - key: {fileID: -831501994313965521, guid: eabf5c56469978547a813b6fca803053, type: 2}
-    value: {fileID: 8260340440248724690}
-  - key: {fileID: -6624377234812918632, guid: eabf5c56469978547a813b6fca803053, type: 2}
     value: {fileID: 8260340440248724690}
   m_ExposedReferences:
     m_References: []
@@ -51718,12 +51714,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1907751205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b89606592698f5d43afa20f052b0b6d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 50d3071837073e24aa15b863ba73dfe4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1271691586}
-  openDoor: Play
-  closeDoor: Close
+  m_EditorClassIdentifier: '::'
+  dir: {fileID: 536780377}
 --- !u!4 &1923305806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3093283929410345795, guid: ce11b7d3c26f9c94c9362e051da72b61, type: 3}

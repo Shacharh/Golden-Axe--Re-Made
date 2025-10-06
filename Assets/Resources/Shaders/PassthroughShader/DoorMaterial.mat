@@ -66,6 +66,7 @@ Material:
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 10
+    - _DstBlendAlpha: 10
     - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -73,13 +74,14 @@ Material:
     - _Size: 0
     - _Smoothness: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Surface: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 0
     - _ZWriteControl: 0
     m_Colors:
-    - _Position: {r: 0.40493956, g: 0.33780164, b: 14.942183, a: 0}
+    - _Position: {r: 0.5134818, g: 0.3398671, b: 14.978953, a: 0}
     - _Tint: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
