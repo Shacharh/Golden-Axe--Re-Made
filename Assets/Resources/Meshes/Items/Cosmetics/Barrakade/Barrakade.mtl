@@ -1,0 +1,18 @@
+# Apple ModelI/O MTL File: Barrakade.mtl
+
+newmtl tripo_mat_aec4a75a-899e-4a4d-b85c-fbed27abf992
+	map_Kd tripo_mat_aec4a75a-899e-4a4d-b85c-fbed27abf992-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic tripo_mat_aec4a75a-899e-4a4d-b85c-fbed27abf992-metallic.png
+	specularTint 0
+	map_roughness tripo_mat_aec4a75a-899e-4a4d-b85c-fbed27abf992-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
