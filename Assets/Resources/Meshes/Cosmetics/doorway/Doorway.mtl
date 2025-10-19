@@ -1,0 +1,66 @@
+# Apple ModelI/O MTL File: Doorway.mtl
+
+newmtl Box032
+	map_Kd Box032-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Box032-metallic.png
+	specularTint 0
+	map_roughness Box032-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Rectangle003
+	map_Kd Rectangle003-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Rectangle003-metallic.png
+	specularTint 0
+	map_roughness Rectangle003-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Rectangle008
+	map_Kd Rectangle008-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Rectangle008-metallic.png
+	specularTint 0
+	map_roughness Rectangle008-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Rectangle012
+	map_Kd Rectangle012-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Rectangle012-metallic.png
+	specularTint 0
+	map_roughness Rectangle012-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
