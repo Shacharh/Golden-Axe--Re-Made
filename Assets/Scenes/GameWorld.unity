@@ -30882,22 +30882,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2355989385695726771, guid: d2e6b968423b9a54ba52e0bb3ee50f90, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2355989385695726771, guid: d2e6b968423b9a54ba52e0bb3ee50f90, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5924697413193121485, guid: d2e6b968423b9a54ba52e0bb3ee50f90, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5924697413193121485, guid: d2e6b968423b9a54ba52e0bb3ee50f90, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8180144605009536797, guid: d2e6b968423b9a54ba52e0bb3ee50f90, type: 3}
       propertyPath: m_Name
       value: Innert_Statue (2)
