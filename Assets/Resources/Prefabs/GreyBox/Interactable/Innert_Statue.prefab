@@ -1611,7 +1611,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7629791843601866500}
   - component: {fileID: 8176480282718610997}
-  - component: {fileID: 684211830499231491}
   m_Layer: 0
   m_Name: SkeletonSoldier (1)
   m_TagString: Untagged
@@ -1659,57 +1658,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &684211830499231491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1082074013435260408, guid: 9fc785466b5c99f49b9425a721e49c04, type: 3}
-  m_PrefabInstance: {fileID: 466830225535904507}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7109398125256607166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boneShape: 1
-  drawBones: 1
-  drawTripods: 0
-  boneSize: 1
-  tripodSize: 1
-  boneColor: {r: 0, g: 0, b: 1, a: 0.5}
-  m_Transforms:
-  - {fileID: 3748326997688476925}
-  - {fileID: 4579850445073862023}
-  - {fileID: 7745105439265581184}
-  - {fileID: 5764193468335994907}
-  - {fileID: 888443750414647666}
-  - {fileID: 9135376102461954283}
-  - {fileID: 2439504428459084803}
-  - {fileID: 2716274814384979856}
-  - {fileID: 5615046269383116524}
-  - {fileID: 2249464807665305775}
-  - {fileID: 4482602001759726551}
-  - {fileID: 630378973591799318}
-  - {fileID: 3770826715091184940}
-  - {fileID: 8943872914779730691}
-  - {fileID: 7352819705635649945}
-  - {fileID: 291971834036278439}
-  - {fileID: 610187703083656916}
-  - {fileID: 961075114780270130}
-  - {fileID: 5688151339585824478}
-  - {fileID: 4027435244107827265}
-  - {fileID: 6228857087442374039}
-  - {fileID: 4408308198243788778}
-  - {fileID: 5619244208529526087}
-  - {fileID: 8637168472622188327}
-  - {fileID: 2255625645891747401}
-  - {fileID: 7751495598908382193}
-  - {fileID: 6739471502328594660}
-  - {fileID: 2942452626460554157}
-  - {fileID: 2479818695872132661}
-  - {fileID: 7357192219160223379}
-  - {fileID: 5048943667935555143}
-  - {fileID: 129661190696718053}
 --- !u!1 &7139406833328715779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,9 +1667,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7311765025871628650}
-  - component: {fileID: 5894892638859915189}
-  - component: {fileID: 6609065165042161945}
-  - component: {fileID: 4727146671042206939}
   m_Layer: 0
   m_Name: Enemy_Skeleton
   m_TagString: Enemy
@@ -1745,58 +1690,6 @@ Transform:
   - {fileID: 7629791843601866500}
   m_Father: {fileID: 108702540306234790}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &5894892638859915189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6319779541991867726, guid: 9fc785466b5c99f49b9425a721e49c04, type: 3}
-  m_PrefabInstance: {fileID: 466830225535904507}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7139406833328715779}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fd08b49ffac17d43b1c0aee455d70d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectionRadius: 5
-  showDebugVisuals: 1
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  attackRange: 1.5
-  attackCooldown: 1
-  memoryDuration: 5
---- !u!114 &6609065165042161945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 6756136516243993570, guid: 9fc785466b5c99f49b9425a721e49c04, type: 3}
-  m_PrefabInstance: {fileID: 466830225535904507}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7139406833328715779}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b9cdbcac363ee4abcb55e175d07571, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 10
-  weaponCollider: {fileID: 0}
-  enemyAnimator: {fileID: 0}
---- !u!114 &4727146671042206939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5179334494068389408, guid: 9fc785466b5c99f49b9425a721e49c04, type: 3}
-  m_PrefabInstance: {fileID: 466830225535904507}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7139406833328715779}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ded303049db4745a64ef2ab45e824d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
-  easeHealthSlider: {fileID: 0}
-  maxHealth: 100
-  health: 0
-  damageRecieved: 0
 --- !u!1 &7815975468987579049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,7 +2352,8 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: d741bc4b067fb594cbd75fd8ad828daf, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
