@@ -12,7 +12,7 @@ public class CircleSync : MonoBehaviour
     public float Radius = 1;
     public bool rayhit = false;
     
-    void Update()
+    private void Update()
     {
         var Dir = Camera.transform.position - transform.position;
         var ray = new Ray(Camera.transform.position, Dir.normalized);
