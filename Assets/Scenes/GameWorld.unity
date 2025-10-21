@@ -6507,8 +6507,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07819814, y: 0, z: 0, w: 0.9969379}
-  m_LocalPosition: {x: 0.85719347, y: 9.507252, z: -62.23131}
+  m_LocalRotation: {x: 0.11606403, y: 0, z: 0, w: 0.9932418}
+  m_LocalPosition: {x: -3.9230661, y: 12.824587, z: -63.549488}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -37456,13 +37456,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503159650}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07819814, y: 0, z: 0, w: 0.9969379}
-  m_LocalPosition: {x: 0.85719347, y: 9.507252, z: -62.23131}
+  m_LocalRotation: {x: 0.11606401, y: 0, z: 0, w: 0.9932418}
+  m_LocalPosition: {x: -3.9230661, y: 12.824587, z: -63.549488}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 8.97, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.33, y: 0, z: 0}
 --- !u!114 &1503159653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37477,7 +37477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineSplineDolly
   m_SplineSettings:
     Spline: {fileID: 2013533160}
-    Position: 0.03
+    Position: 0.5
     Units: 1
   SplineOffset: {x: 0, y: 0, z: 0}
   CameraRotation: 0
@@ -53543,41 +53543,41 @@ MonoBehaviour:
   - m_EditModeType: 1
     m_Knots:
     - Position:
-        x: 0
+        x: -1.1
         y: 0
         z: 0
       TangentIn:
         x: -0
         y: -0
-        z: -0.9500189
+        z: -0.79302263
       TangentOut:
         x: 0
         y: 0
-        z: 0.9500189
+        z: 0.79302263
       Rotation:
         value:
           x: 0
-          y: -0.7048744
+          y: -0.7044316
           z: -0
-          w: 0.70933217
+          w: 0.7097719
     - Position:
-        x: -9.5
+        x: -9.03
         y: 0
         z: 0.059890747
       TangentIn:
         x: -0
         y: -0
-        z: -0.9500189
+        z: -0.79302263
       TangentOut:
         x: 0
         y: 0
-        z: 0.9500189
+        z: 0.79302263
       Rotation:
         value:
           x: 0
-          y: -0.7048744
+          y: -0.7044316
           z: -0
-          w: 0.70933217
+          w: 0.7097719
     m_MetaData:
     - Mode: 0
       Tension: 0.5
@@ -53602,13 +53602,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013533159}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.418, y: -25.538109, z: -86.879684}
+  m_LocalRotation: {x: 0.012937453, y: -0, z: -0, w: 0.9999163}
+  m_LocalPosition: {x: -42.418, y: -22.22, z: -88.226}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1713972219}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.483, y: 0, z: 0}
 --- !u!1 &2015231548
 GameObject:
   m_ObjectHideFlags: 0
