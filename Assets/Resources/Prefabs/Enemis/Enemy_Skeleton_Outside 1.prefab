@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 3594990743020433597}
   - component: {fileID: 4270411682077878913}
   m_Layer: 0
-  m_Name: Enemy_Skeleton_Outside
+  m_Name: Enemy_Skeleton_Outside 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6141476870545100726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3b9cdbcac363ee4abcb55e175d07571, type: 3}
   m_Name: 
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d2e41e5d7ee5014bbf57fc004a506b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 1
   health: 0
   lerpSpeed: 0.03
   healthBar: {fileID: 3862379776570150225}
