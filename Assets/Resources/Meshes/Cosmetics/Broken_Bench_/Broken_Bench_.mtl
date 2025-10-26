@@ -1,0 +1,18 @@
+# Apple ModelI/O MTL File: Broken_Bench_.mtl
+
+newmtl tripo_mat_760d683b-9a03-41e1-bf58-487df4d9cbcf
+	map_Kd tripo_mat_760d683b-9a03-41e1-bf58-487df4d9cbcf-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic tripo_mat_760d683b-9a03-41e1-bf58-487df4d9cbcf-metallic.png
+	specularTint 0
+	map_roughness tripo_mat_760d683b-9a03-41e1-bf58-487df4d9cbcf-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
