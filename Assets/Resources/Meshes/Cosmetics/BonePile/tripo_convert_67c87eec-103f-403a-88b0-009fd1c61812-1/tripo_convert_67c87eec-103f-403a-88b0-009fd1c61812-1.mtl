@@ -1,0 +1,66 @@
+# Apple ModelI/O MTL File: tripo_convert_67c87eec-103f-403a-88b0-009fd1c61812-1.mtl
+
+newmtl Box_1_material
+	map_Kd Box_1_material-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Box_1_material-metallic.png
+	specularTint 0
+	map_roughness Box_1_material-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sphere_material
+	map_Kd Sphere_material-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sphere_material-metallic.png
+	specularTint 0
+	map_roughness Sphere_material-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sphere_1_material
+	map_Kd Sphere_1_material-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sphere_1_material-metallic.png
+	specularTint 0
+	map_roughness Sphere_1_material-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sphere_2_material
+	map_Kd Sphere_2_material-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sphere_2_material-metallic.png
+	specularTint 0
+	map_roughness Sphere_2_material-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
