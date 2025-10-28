@@ -3,7 +3,27 @@ guid: b8d9c478645928d42a8d1a20b81c064c
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tripo_convert_67c87eec-103f-403a-88b0-009fd1c61812-1_Box_1_material
+    second: {fileID: 2100000, guid: 81df109ac55f5b14caa0dd17ea8c3e55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tripo_convert_67c87eec-103f-403a-88b0-009fd1c61812-1_Sphere_1_material
+    second: {fileID: 2100000, guid: e09e6a4d96bf1a74aaa8fecb00f10354, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tripo_convert_67c87eec-103f-403a-88b0-009fd1c61812-1_Sphere_2_material
+    second: {fileID: 2100000, guid: 0e548b6b1c4193e40bef0843d9826523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tripo_convert_67c87eec-103f-403a-88b0-009fd1c61812-1_Sphere_material
+    second: {fileID: 2100000, guid: 7b0ea13f20f8ca244b9fa4b64dd84f64, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -91,7 +111,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01778
+    globalScale: 0.7
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
