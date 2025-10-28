@@ -6516,7 +6516,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.09838535, y: -0.0379774, z: 0.0037573993, w: 0.9944164}
-  m_LocalPosition: {x: -3.758184, y: 12.934605, z: -67.73426}
+  m_LocalPosition: {x: -0.16342044, y: 12.935317, z: -67.76176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38266,7 +38266,7 @@ Transform:
   m_GameObject: {fileID: 1503159650}
   serializedVersion: 2
   m_LocalRotation: {x: 0.09838534, y: -0.037977394, z: 0.0037573986, w: 0.9944164}
-  m_LocalPosition: {x: -3.758184, y: 12.934605, z: -67.73426}
+  m_LocalPosition: {x: -0.16342044, y: 12.935317, z: -67.76176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38286,7 +38286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineSplineDolly
   m_SplineSettings:
     Spline: {fileID: 2013533160}
-    Position: 8.240228
+    Position: 4.2052765
     Units: 0
   SplineOffset: {x: 0, y: 0, z: -4}
   CameraRotation: 0
@@ -54673,35 +54673,35 @@ MonoBehaviour:
       TangentIn:
         x: -0
         y: -0
-        z: -0.780023
+        z: -0.7360244
       TangentOut:
         x: 0
         y: 0
-        z: 0.780023
+        z: 0.7360244
       Rotation:
         value:
           x: 0
-          y: -0.704387
+          y: -0.704224
           z: -0
-          w: 0.7098162
+          w: 0.7099778
     - Position:
-        x: -8.9
+        x: -8.46
         y: 0
         z: 0.059890747
       TangentIn:
         x: -0
         y: -0
-        z: -0.780023
+        z: -0.7360244
       TangentOut:
         x: 0
         y: 0
-        z: 0.780023
+        z: 0.7360244
       Rotation:
         value:
           x: 0
-          y: -0.704387
+          y: -0.704224
           z: -0
-          w: 0.7098162
+          w: 0.7099778
     m_MetaData:
     - Mode: 0
       Tension: 0.5
@@ -60379,7 +60379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5711207673928115127, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.2
+      value: -3.38
       objectReference: {fileID: 0}
     - target: {fileID: 5711207673928115127, guid: 2ff3f75777f8d1b46b489110c2734c8b, type: 3}
       propertyPath: m_LocalPosition.y
