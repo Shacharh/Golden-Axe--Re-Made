@@ -28,7 +28,7 @@ public class EnemyDamageMaker : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             var playerHealth = other.GetComponent<HealthSystem>();
             playerHealth.TakeDamage(damage);

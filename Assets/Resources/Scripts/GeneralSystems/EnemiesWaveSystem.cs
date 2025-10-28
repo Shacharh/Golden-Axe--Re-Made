@@ -1,36 +1,61 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class EnemiesWaveSystem : MonoBehaviour
 {
     [System.Serializable]
-    public class Wave //parameters settings for each wave
+    public class Wave
     {
         public GameObject enemyPrefabs;
         public int enemiesInWave;
         public Transform[] spawnPoints;
     }
 
-    [Header("Waves Setup")] //list of all the waves and keeping track of active wave
+    [Header("Waves Setup")]
     public List<Wave> waves = new List<Wave>();
     private int currentWaveIndex = 0;
 
-    private List<GameObject> activeEnemies = new List<GameObject>(); //list that keep track of enemies alive in current wave
+    private List<GameObject> activeEnemies = new List<GameObject>();
+
+    [Header("Wave Timing")]
+    [SerializeField] private float timeBetweenWaves = 3f; // delay in seconds
+    private bool waitingForNextWave = false;
+
+    [SerializeField] private GameObject doorTrigger;
+    [SerializeField] private GameObject doorCollider;
 
     private void Start()
     {
-        //spawning first wave at the start of the level
+        doorTrigger.SetActive(false);
         SpawnWave(currentWaveIndex);
     }
 
     private void Update()
     {
-        //check if wave is cleared and startt next wave
-        if(activeEnemies.Count == 0 && currentWaveIndex < waves.Count - 1)
+        if (activeEnemies.Count == 0 && !waitingForNextWave)
         {
-            currentWaveIndex++;
-            SpawnWave(currentWaveIndex);
+            if (currentWaveIndex < waves.Count - 1)
+            {
+                currentWaveIndex++;
+                StartCoroutine(WaitAndSpawnNextWave(currentWaveIndex));
+            }
+
+            else
+            {
+                doorCollider.SetActive(false);
+                doorTrigger.SetActive(true);
+            }
         }
+    }
+
+    private IEnumerator WaitAndSpawnNextWave(int waveIndex)
+    {
+        waitingForNextWave = true;
+        yield return new WaitForSeconds(timeBetweenWaves);
+
+        SpawnWave(waveIndex);
+        waitingForNextWave = false;
     }
 
     void SpawnWave(int waveIndex)
@@ -38,21 +63,19 @@ public class EnemiesWaveSystem : MonoBehaviour
         Wave wave = waves[waveIndex];
         int enemiesToSpawn = Mathf.Min(wave.enemiesInWave, wave.spawnPoints.Length);
 
-        for(int i = 0; i < enemiesToSpawn; i++)
+        for (int i = 0; i < enemiesToSpawn; i++)
         {
-            Transform spawnPoints = wave.spawnPoints[i];
-            GameObject enemy = Instantiate(wave.enemyPrefabs, spawnPoints.position, spawnPoints.rotation);
-            
+            Transform spawnPoint = wave.spawnPoints[i];
+            GameObject enemy = Instantiate(wave.enemyPrefabs, spawnPoint.position, spawnPoint.rotation);
 
             activeEnemies.Add(enemy);
 
             HealthSystem enemyHealth = enemy.GetComponent<HealthSystem>();
-            if(enemyHealth != null)
+            if (enemyHealth != null)
             {
                 enemyHealth.onDeath += () => { activeEnemies.Remove(enemy); };
             }
         }
-        Debug.Log("Spawned Wave" + (waveIndex + 1));
+        Debug.Log("Spawned Wave " + (waveIndex + 1));
     }
-
 }

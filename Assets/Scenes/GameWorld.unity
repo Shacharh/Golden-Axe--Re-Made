@@ -5587,6 +5587,9 @@ MonoBehaviour:
     - {fileID: 861422734}
     - {fileID: 426837534}
     - {fileID: 418906562}
+  timeBetweenWaves: 3
+  doorTrigger: {fileID: 1907751205}
+  doorCollider: {fileID: 1202767856}
 --- !u!4 &266256498
 Transform:
   m_ObjectHideFlags: 0
@@ -16880,6 +16883,9 @@ MonoBehaviour:
     spawnPoints:
     - {fileID: 1046407792}
     - {fileID: 1272846887}
+  timeBetweenWaves: 3
+  doorTrigger: {fileID: 0}
+  doorCollider: {fileID: 0}
 --- !u!1001 &633581257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27843,6 +27849,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910195807}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &911082873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911082874}
+  - component: {fileID: 911082876}
+  - component: {fileID: 911082875}
+  m_Layer: 0
+  m_Name: Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &911082874
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911082873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 338.03302}
+  m_LocalScale: {x: 1.479036, y: 1.479036, z: 1.479036}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1734650529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5, y: -268}
+  m_SizeDelta: {x: 402, y: 1600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &911082875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911082873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5281f2de30b9de3439a204aedbed7d5e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &911082876
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911082873}
+  m_CullTransparentMesh: 1
 --- !u!1 &914503726
 GameObject:
   m_ObjectHideFlags: 0
@@ -28742,6 +28823,11 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!4 &978886783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4354210849850180281, guid: adf76f25a47a2974f941528bbd792fae, type: 3}
+  m_PrefabInstance: {fileID: 6438880073497138990}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &983025279
 GameObject:
   m_ObjectHideFlags: 0
@@ -33058,6 +33144,59 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8354588756569167316, guid: f7f457fdcc95e974c998ca328f4d2372, type: 3}
   m_PrefabInstance: {fileID: 1775693100}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1202767856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1202767857}
+  - component: {fileID: 1202767858}
+  m_Layer: 0
+  m_Name: DoorCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1202767857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202767856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.67, y: -0, z: -4.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 978886783}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1202767858
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202767856}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.37894613, y: 3.0706024, z: 4.989008}
+  m_Center: {x: -0.06304575, y: 0.23456125, z: -0.38093057}
 --- !u!1 &1202993129
 GameObject:
   m_ObjectHideFlags: 0
@@ -35386,6 +35525,9 @@ MonoBehaviour:
     spawnPoints:
     - {fileID: 1046407792}
     - {fileID: 1272846887}
+  timeBetweenWaves: 3
+  doorTrigger: {fileID: 0}
+  doorCollider: {fileID: 0}
 --- !u!1001 &1337725901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45865,6 +46007,9 @@ MonoBehaviour:
     spawnPoints:
     - {fileID: 1046407792}
     - {fileID: 1272846887}
+  timeBetweenWaves: 3
+  doorTrigger: {fileID: 0}
+  doorCollider: {fileID: 0}
 --- !u!4 &1637041576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7011112482648143786, guid: 345d95fb0c4cdbc43be69c4d7ee61ad7, type: 3}
@@ -48137,6 +48282,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1820087951}
+  - {fileID: 911082874}
   m_Father: {fileID: 1028678548}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -57091,6 +57237,9 @@ MonoBehaviour:
     spawnPoints:
     - {fileID: 1046407792}
     - {fileID: 1272846887}
+  timeBetweenWaves: 3
+  doorTrigger: {fileID: 0}
+  doorCollider: {fileID: 0}
 --- !u!1 &2112477938
 GameObject:
   m_ObjectHideFlags: 0
@@ -59555,7 +59704,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 559d35677a1e8784882645d1001b441d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4354210849850180281, guid: adf76f25a47a2974f941528bbd792fae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1202767857}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adf76f25a47a2974f941528bbd792fae, type: 3}
 --- !u!1001 &6469924752250290230

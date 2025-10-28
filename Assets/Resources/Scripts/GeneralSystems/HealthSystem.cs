@@ -34,8 +34,10 @@ public class HealthSystem : MonoBehaviour
             easeHealthBar.value = Mathf.Lerp(easeHealthBar.value, health, lerpSpeed);
 
         if (worldSpaceHealthBar && healthBar != null)
+        {
             healthBar.transform.forward = Camera.main.transform.forward;
             easeHealthBar.transform.forward = Camera.main.transform.forward;
+        }
     }
 
     public void TakeDamage(float damage)
