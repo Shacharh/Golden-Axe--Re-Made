@@ -386,6 +386,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2711694379872473437}
     m_Modifications:
+    - target: {fileID: 2545046498851136536, guid: 996cfb8a176b4e946afb6e81182baea1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3967322995021666563, guid: 996cfb8a176b4e946afb6e81182baea1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.79
+      objectReference: {fileID: 0}
     - target: {fileID: 6098984888928520932, guid: 996cfb8a176b4e946afb6e81182baea1, type: 3}
       propertyPath: m_Name
       value: _WindowWall
@@ -504,6 +512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PW-DecorSet
       objectReference: {fileID: 0}
+    - target: {fileID: 7192083653396914568, guid: 7d6014c0ff8328640bcb27d382b2c2b2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8372240192388046112, guid: 7d6014c0ff8328640bcb27d382b2c2b2, type: 3}
       propertyPath: m_LocalScale.z
       value: 9.354267
@@ -513,7 +525,8 @@ PrefabInstance:
       value: 4.5131
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7192083653396914568, guid: 7d6014c0ff8328640bcb27d382b2c2b2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d6014c0ff8328640bcb27d382b2c2b2, type: 3}
