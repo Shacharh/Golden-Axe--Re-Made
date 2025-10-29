@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using StarterAssets;
 
 public class NewCombatSystem : MonoBehaviour
 {
@@ -28,11 +29,19 @@ public class NewCombatSystem : MonoBehaviour
     [SerializeField] BoxCollider weaponCollider;
 
     private HashSet<GameObject> enemiesHit = new HashSet<GameObject>();
+    private ThirdPersonController playerController;
+    private float originalSpeed;
 
     void Start()
     {
         anim = GetComponent<Animator>();
         weaponCollider.enabled = false;
+
+        playerController = GetComponent<ThirdPersonController>();
+        if (playerController != null)
+        {
+            originalSpeed = playerController.MoveSpeed;
+        }
     }
 
     void Update()
@@ -69,6 +78,9 @@ public class NewCombatSystem : MonoBehaviour
             {
                 attackInProgress = false;
                 currentComboStep = 0;
+                
+                if(playerController != null)
+                    playerController.MoveSpeed = originalSpeed;
             }
         }
     }
@@ -83,6 +95,9 @@ public class NewCombatSystem : MonoBehaviour
 
         anim.SetTrigger(attack.animationTrigger);
         Debug.Log("Attack " + (step + 1));
+        
+        if(playerController != null)
+            playerController.MoveSpeed = 0;
     }
 
     // === Weapon Damage ===
