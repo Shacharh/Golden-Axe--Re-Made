@@ -43,7 +43,9 @@ public class EnemiesWaveSystem : MonoBehaviour
 
             else
             {
+			if(doorCollider)
                 doorCollider.SetActive(false);
+			if(doorTrigger)
                 doorTrigger.SetActive(true);
             }
         }
