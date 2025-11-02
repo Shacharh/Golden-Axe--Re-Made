@@ -4341,7 +4341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &176182602
 Transform:
   m_ObjectHideFlags: 0
@@ -6886,11 +6886,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.27
-  far clip plane: 1000
-  field of view: 59.1
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 30
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6914,8 +6914,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09154547, y: -0.70671177, z: 0.09304034, w: 0.6953571}
-  m_LocalPosition: {x: 4.132051, y: 4.826369, z: 15.403848}
+  m_LocalRotation: {x: 0.12055417, y: -0.7088054, z: 0.124981485, w: 0.68369687}
+  m_LocalPosition: {x: 9.981932, y: 6.9133606, z: -14.073424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17891,7 +17891,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &628392796
 Transform:
   m_ObjectHideFlags: 0
@@ -18884,13 +18884,14 @@ GameObject:
   m_Component:
   - component: {fileID: 677513382}
   - component: {fileID: 677513383}
+  - component: {fileID: 677513384}
   m_Layer: 0
-  m_Name: BD_Cam_00
+  m_Name: BD-Cam_Dolly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &677513382
 Transform:
   m_ObjectHideFlags: 0
@@ -18899,13 +18900,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677513381}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15166138, y: -0.40141678, z: 0.06757866, w: 0.90072006}
-  m_LocalPosition: {x: 4.8, y: 4.613, z: -18.33}
+  m_LocalRotation: {x: 0.12055419, y: -0.7088053, z: 0.124981485, w: 0.68369687}
+  m_LocalPosition: {x: 9.619881, y: 4.1669917, z: -15.217272}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 263020950}
-  m_LocalEulerAnglesHint: {x: 19.115, y: -48.042, z: -0.001}
+  m_LocalEulerAnglesHint: {x: 20, y: -92.066, z: 0}
 --- !u!114 &677513383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18920,20 +18921,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority:
     Enabled: 1
-    m_Value: 0
+    m_Value: 10
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 0}
+    TrackingTarget: {fileID: 3893294197795769105}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
-    FieldOfView: 60.000004
-    OrthographicSize: 5
-    NearClipPlane: 0.27
-    FarClipPlane: 1000
+    FieldOfView: 30
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
     PhysicalProperties:
@@ -18949,6 +18950,44 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!114 &677513384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677513381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90eebaab98e4b44b0ba8c79821e554e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SplineSettings:
+    Spline: {fileID: 475520891}
+    Position: 0
+    Units: 0
+  SplineOffset: {x: 3.01, y: 2.66, z: 0.47}
+  CameraRotation: 0
+  Damping:
+    Enabled: 1
+    Position: {x: 0.6, y: 0.6, z: 0}
+    Angular: 0
+  AutomaticDolly:
+    Enabled: 1
+    Method:
+      rid: 2518626304106168641
+  m_LegacyPosition: -1
+  m_LegacyUnits: 0
+  m_LegacySpline: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 2518626304106168641
+      type: {class: SplineAutoDolly/NearestPointToTarget, ns: Unity.Cinemachine, asm: Unity.Cinemachine}
+      data:
+        PositionOffset: 0
+        SearchResolution: 4
+        SearchIteration: 2
 --- !u!1 &680407248
 GameObject:
   m_ObjectHideFlags: 0
@@ -19371,7 +19410,7 @@ RectTransform:
   m_Father: {fileID: 2133798330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -82}
   m_SizeDelta: {x: 402, y: 1600}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25816,7 +25855,7 @@ RectTransform:
   m_Father: {fileID: 529849573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -27741,7 +27780,7 @@ RectTransform:
   m_Father: {fileID: 1416716268}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -31767,7 +31806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1028678545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31963,7 +32002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1036939940
 Transform:
   m_ObjectHideFlags: 0
@@ -38199,7 +38238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1335704146
 Transform:
   m_ObjectHideFlags: 0
@@ -49610,7 +49649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1630296174
 Transform:
   m_ObjectHideFlags: 0
@@ -52777,7 +52816,7 @@ RectTransform:
   m_Father: {fileID: 1820087951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -82}
   m_SizeDelta: {x: 402, y: 1600}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -62561,7 +62600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2108805521
 Transform:
   m_ObjectHideFlags: 0
@@ -67229,7 +67268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1799755817936321727, guid: 3761a8522f25d9a4e8b4f8c11fd3cc68, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4244584778557365177, guid: 3761a8522f25d9a4e8b4f8c11fd3cc68, type: 3}
       propertyPath: m_LocalScale.x
