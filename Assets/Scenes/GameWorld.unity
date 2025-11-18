@@ -10703,7 +10703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &263020950
 Transform:
   m_ObjectHideFlags: 0
@@ -11722,11 +11722,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.27
-  far clip plane: 1000
-  field of view: 59.1
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 10.97
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11750,8 +11750,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09154547, y: -0.70671177, z: 0.09304034, w: 0.6953571}
-  m_LocalPosition: {x: 4.132051, y: 4.826369, z: 15.403848}
+  m_LocalRotation: {x: 0.09838535, y: -0.0379774, z: 0.0037573993, w: 0.9944164}
+  m_LocalPosition: {x: -0.33461738, y: 12.935281, z: -67.76037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16323,6 +16323,8 @@ PlayableDirector:
     value: {fileID: 1503159650}
   - key: {fileID: 3073932796608594614, guid: eabf5c56469978547a813b6fca803053, type: 2}
     value: {fileID: 1907751205}
+  - key: {fileID: 1462388814216166973, guid: eabf5c56469978547a813b6fca803053, type: 2}
+    value: {fileID: 1595118728}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &536780378
@@ -46509,7 +46511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1503159651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46562,7 +46564,7 @@ Transform:
   m_GameObject: {fileID: 1503159650}
   serializedVersion: 2
   m_LocalRotation: {x: 0.09838534, y: -0.037977394, z: 0.0037573986, w: 0.9944164}
-  m_LocalPosition: {x: -0.16342044, y: 12.935317, z: -67.76176}
+  m_LocalPosition: {x: -0.33461738, y: 12.935281, z: -67.76037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46582,7 +46584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineSplineDolly
   m_SplineSettings:
     Spline: {fileID: 2013533160}
-    Position: 4.2052765
+    Position: 4.37593
     Units: 0
   SplineOffset: {x: 0, y: 0, z: -4}
   CameraRotation: 0
@@ -53466,7 +53468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1595118729
 MonoBehaviour:
   m_ObjectHideFlags: 0
