@@ -78,10 +78,32 @@ public class NewCombatSystem : MonoBehaviour
             {
                 attackInProgress = false;
                 currentComboStep = 0;
-                
-                if(playerController != null)
+
+                if (playerController != null)
+                {
                     playerController.MoveSpeed = originalSpeed;
+                    playerController.CombatLocked = false;
+                }
             }
+        }
+
+        // Poll for overlap every frame while the weapon is "live" instead of relying solely on
+        // OnTriggerEnter, since the weapon collider is animation-driven and can tunnel through
+        // enemies between physics steps during a fast swing.
+        if (weaponCollider.enabled)
+        {
+            CheckWeaponOverlap();
+        }
+    }
+
+    void CheckWeaponOverlap()
+    {
+        Vector3 center = weaponCollider.transform.TransformPoint(weaponCollider.center);
+        Vector3 halfExtents = Vector3.Scale(weaponCollider.size, weaponCollider.transform.lossyScale) * 0.5f;
+        Collider[] hits = Physics.OverlapBox(center, halfExtents, weaponCollider.transform.rotation);
+        foreach (var hit in hits)
+        {
+            OnWeaponTriggerEnter(hit);
         }
     }
 
@@ -95,9 +117,12 @@ public class NewCombatSystem : MonoBehaviour
 
         anim.SetTrigger(attack.animationTrigger);
         Debug.Log("Attack " + (step + 1));
-        
-        if(playerController != null)
+
+        if (playerController != null)
+        {
             playerController.MoveSpeed = 0;
+            playerController.CombatLocked = true;
+        }
     }
 
     // === Weapon Damage ===

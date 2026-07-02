@@ -940,16 +940,16 @@ MonoBehaviour:
   comboResetTime: 1
   comboAttacks:
   - animationTrigger: Attack1
-    attackDuration: 1.5
-    inputBufferTime: 0.5
+    attackDuration: 1
+    inputBufferTime: 0.333
     damage: 20
   - animationTrigger: Attack2
-    attackDuration: 1
-    inputBufferTime: 0.4
+    attackDuration: 0.667
+    inputBufferTime: 0.267
     damage: 20
   - animationTrigger: Attack3
-    attackDuration: 2
-    inputBufferTime: 1
+    attackDuration: 1.333
+    inputBufferTime: 0.667
     damage: 20
   weaponCollider: {fileID: 1416868245980027596}
 --- !u!114 &2070770608506929203
